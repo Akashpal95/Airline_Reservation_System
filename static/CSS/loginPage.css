@@ -1,0 +1,73 @@
+/*login page*/
+
+@media only screen and (max-width: 600px) {
+  #bg-img>.modal-content {
+  	width: 61%;
+  }
+}
+
+.post-navbar {
+  align-items: center;
+  height: 630px;
+  background: white;
+}
+
+#bg-img {
+	width: 100%;
+	height: 448px;
+	background-size: 100% 100%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	background-image: url("../PICS/Jetblue-airlines-reservation.jpg");
+	border: 0.2px solid #d3d3d3;
+}
+
+.modal-content{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 287px;
+  background: rgba(245,245,245,.3);
+  width: 43%;
+}
+
+.transbg {
+	width: 100%;
+	background-size: 100% 100%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+  background-image: url("../PICS/innercbs_img.png");
+  padding: 15px;
+}
+
+#innerlog {
+	padding: 10px;
+	background: white;
+	border: 1px solid black;
+}
+
+.headings {
+	color: black;
+	font-family: "Tahoma";
+	font-size: 12px;
+	text-transform: uppercase;
+	font-weight: 610;
+	margin-top: 16px;
+}
+
+.inputfields {
+	width: 100%;
+	height: 34px;
+}
+
+#login-btn {
+	border-radius: 15px;
+	text-align: center;
+	background: #2f8fde;
+	margin-left: 35%;
+	width: 30%;
+	min-width: 70px;
+	height: 34px;
+	color: black;
+}

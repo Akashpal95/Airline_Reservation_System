@@ -1,0 +1,34 @@
+DELIMITER $$
+CREATE DEFINER=`Akash`@`localhost` PROCEDURE `sp_Flights`(
+    IN in_Flight_name VARCHAR(10),
+    IN in_First_name VARCHAR(0),
+    IN in_Arrival VARCHAR(10),
+	IN in_Departure_time TIME(6),
+	IN in_Arrival_time TIME(6),
+	IN in_Seats VARCHAR(10),
+	IN in_Price VARCHAR(10)
+)
+BEGIN
+        insert into `flights`
+        (
+        Flight_name,
+	Departure,
+	Arrival,
+	Departure_time,
+	Arrival_time,
+	Seats,
+	Price	
+        )
+        values
+        (
+        in_Flight_name,
+		in_Departure,
+		in_Arrival,
+		in_Departure_time,
+		in_Arrival_time,
+		in_Seats,
+		in_Price
+        );
+     
+END$$
+DELIMITER ;

@@ -1,0 +1,28 @@
+DELIMITER $$
+CREATE DEFINER=`Akash`@`localhost` PROCEDURE `sp_book`(
+    IN in_Flight_name VARCHAR(10),
+    IN in_First_name VARCHAR(20),
+    IN in_Last_name VARCHAR(20),
+	IN in_Phone_no VARCHAR(10),
+	IN in_Email_id TEXT
+)
+BEGIN
+        insert into `bookings`
+        (
+        Flight_name,
+	First_name,
+	Last_name,
+	Phone_no,
+	Email_id	
+        )
+        values
+        (
+        in_Flight_name,
+		in_First_name,
+		in_Last_name,
+		in_Phone_no,
+		in_Email_id
+        );
+     
+END$$
+DELIMITER ;

@@ -1,0 +1,163 @@
+.search_categories select{
+	margin-left: 15%;
+	width: 12%;
+	background-position:80% center;
+}
+
+.post-navbar {
+	background-color: white;
+}
+
+@media only screen and (max-width: 600px) {
+	#blockInput{
+		width: 60%;
+		margin: 5px 20%;
+	}
+
+	#seaterInput{
+		width: 60%;
+		clear: left;
+		margin: 5px 20%;
+	}
+
+	#availabilityInput {
+		clear: left;
+		width: 60%;
+		margin: 5px 20%;
+	}
+
+	#dateInput {
+		clear: left;
+		max-width: 160px;
+		width: 60%;
+		margin: 5px 20%;
+	}
+
+	.search_categories>#search-btn {
+		width: 50%;
+		clear: left;
+		margin: 5px 25%;
+	}
+}
+	
+select{
+	float: left;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	color: #fff;
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	height: 40px;
+	outline: none;
+	padding: 0px 10px;
+	background:#3367d6;
+	border: 0 ;.  /*Removes border*/
+	-webkit-appearance: none;  /*Removes default chrome and safari style*/
+	-moz-appearance: none;
+}
+  
+select:hover {
+	background:#517DDC;
+	color: white;
+}
+  
+select:active {
+	background: #3367d6;
+	color: white;
+}
+  
+select:selected {
+	background: #3367d6;
+	color: white;
+}
+
+.datev2 {
+	background-color:#3367d6;
+	bottom:0;
+	left:0;   
+}
+
+input[type="date"]::-webkit-clear-button {
+    display: none;
+}
+
+/* Removes the spin button */
+input[type="date"]::-webkit-inner-spin-button { 
+    display: none;
+}
+
+/* Always display the drop down caret */
+input[type="date"]::-webkit-calendar-picker-indicator {
+    color: #2c3e50;
+}
+
+/* A few custom styles for date inputs */
+input[type="date"] {
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	color: #fff;
+	margin-left: 30%;
+	background-position:80% center;
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+	height: 40px;
+	outline: none;
+	padding: 0px 10px;
+	width: 160px;
+	background:#3367d6;
+	border: 0 ;   /*Removes border*/
+	-webkit-appearance: none;  /*Removes default chrome and safari style*/
+	-moz-appearance: none;
+    display: inline-block !important;
+    visibility: visible !important;
+}
+
+input::-webkit-datetime-edit {
+	color: #fff;
+}
+
+/* Include this to make it visible when input is clicked */
+input:focus::-webkit-datetime-edit {
+	color: #fff;
+} 
+
+input[type="date"]::-webkit-calendar-picker-indicator{
+    background-image: url(https://mywildalberta.ca/images/GFX-MWA-Parks-Reservations.png);
+    opacity: 1;
+    background-position:center;
+    background-size:20px 20px;
+    background-repeat:no-repeat;
+    color:rgba(204,204,204,0);
+}
+
+input[type="date"], focus {
+    color: #95a5a6;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+}
+
+input[type="date"]:hover {
+	background:#517DDC;
+}
+
+#search-btn {
+	border-radius: 10px;
+	border: solid white 1px ;
+	text-align: center;
+	background: #3367d6;
+	margin-left: 15%;
+	width:10%;
+	min-width: 70px;
+	height: 34px;
+	color:#fff;
+}
+
+#search-btn:hover {
+	background:#517DDC;
+	color:#fff;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CBS - Login</title>
+
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="..\static\CSS\navbar_footer.css">
+	<link rel="stylesheet" type="text/css" href="..\static\CSS\loginPage1.css">
+</head>
+<body>
+
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div id="nav-1">
+	    <div class="container custom-top-nav">
+		    <span>
+		    	<a class="first" href="#">Help</a>
+		    </span>
+		  </div>
+		</div>
+
+		<div id="nav-2">
+			<div class="container">
+				<div class="navbar-header">
+					<a href="#" class="navbar-brand">
+						<span id="CBS">
+							<span id="CBS-text">Airline Reservation System</span></center>
+						</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container">
+		<div class="post-navbar">
+			<div id="bg-img">
+				<div class="modal-content">
+					<div class="transbg">
+						<form name="login" method="POST" action="\signin">
+							<div id="innerlog">
+								<label class="headings"> User name</label><br><input class="inputfields" type="text" name="user_name" required><br>
+								<label class="headings"> Password</label><br><input  class="inputfields" type="password" name="password" required> <br>
+							</div>
+							<br> 
+							<input id="login-btn" type="submit" name ="Login" value="Login"></input>
+								<br>
+							
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<p class="footer">Copyright &copy 2018 Akash Airlines</p>
+
+	</div>
+
+	<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+</body>
+</html>

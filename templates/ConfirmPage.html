@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<head>
+<title>Booking Confirmed</title>
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+#book_conf
+{
+    color:"black";
+    font-size:60px; 
+    top: 50%;
+    left: 50%;
+    line-height: 220px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+#d1
+{
+    background-color:"white";
+}
+#tick
+{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 14%;
+    top:50%;
+    
+}
+#link1
+{
+    font-size:30px; 
+    top: 50%;
+    left: 50%;
+    line-height: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+#otp-btn{
+background-color: #3367d6;
+border: none;
+border-radius: 3px;
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+margin-top:50px;
+color: #FFFFFF;
+cursor: pointer;
+font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+font-size:20px;
+height: 60px;
+text-transform: uppercase;
+width: 500px;
+-webkit-appearance:none;
+}
+h3 {
+color: black;
+font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+</style>
+</head>
+<body>
+    <div id="d1">
+        <span id="s1">
+           <b><center><label id="book_conf">BOOKING CONFIRMED!</label></center></b>
+            
+                <img src="..\static\PICS\tick1.png" id="tick">
+            </span>
+            <span>
+                <center><b>Please refer your booking ID given below..</b></center>
+                <center>{{bk_id}}</center>
+            </span>
+    </div>
+   </body>
+</html>

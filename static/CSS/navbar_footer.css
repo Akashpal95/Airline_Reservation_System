@@ -1,0 +1,84 @@
+/*nav bar and footer*/
+
+body {
+	background: #d3d3d3;
+	margin-top: 106px;
+	height: 100%;
+}
+
+#CBS {
+	font-size: 2.5vw;
+	text-align: center;
+	vertical-align: middle;  
+}
+
+#tcs-logo {
+  padding: 7px 15px;
+}
+
+#CBS-text {
+	padding: 0px 15px;
+	font-family: arial;
+	border-left: 1.5px solid white;
+}
+
+@media only screen and (max-width: 600px) {
+  #CBS-text {
+    display: none;
+  }
+
+  #empId {
+    display: none;
+  }
+
+  .navbar-header {
+  	width: 50%;
+  }
+}
+
+.navbar-inverse .navbar-nav>li>a {
+	color: white;
+}
+
+.navbar-inverse .navbar-brand, .navbar-inverse a{
+  color: white;
+}
+
+#nav-1 {
+	background: #012e66;
+	height: 18px;
+	max-height: 18px;
+}
+
+#nav-2 {
+	background: #2d62a4;
+	height: 90px;
+	max-height: 90px;
+}
+
+.custom-top-nav>span {
+  margin-left:auto;
+  margin-right:0;
+  float: right;
+}
+
+.custom-top-nav>span>a {
+  padding: 0px 7px;
+  border-left: 1px solid white;
+  color: white;
+  max-height: 15px;
+}
+
+.custom-top-nav .first {
+	border: 1px solid transparent;
+}
+
+.footer {
+  bottom: 0;
+  width: 100%;
+  height: 15px;
+  vertical-align: center;
+  background-color: #d3d3d3;
+  color: black;
+  padding-left: 9px;
+}

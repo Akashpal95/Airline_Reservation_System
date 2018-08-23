@@ -1,0 +1,83 @@
+.searchCard {
+	margin-top: 20px;
+	border-top: 2px solid gray;
+	/*border: 1.5px dashed orange;*/
+	display: block;
+	overflow: auto;
+}
+
+@media only screen and (max-width: 600px) {
+	span>.cardImg {
+		width: 60%;
+		margin: 7px 20%;
+	}
+
+	span>.cardContent {
+		margin: 7px 5%;
+		width: 90%;
+	}
+}
+
+.searchCard span {
+	display: block;
+	overflow: auto;
+}
+
+.cardImg {
+	margin: 7px;
+	width: 12%;
+	height: 150px;
+	float: left;
+	/*border: 1px solid red;*/
+}
+
+.cardContent {
+	width: 85%;
+	float: left;
+	/*border: 1px solid blue;*/
+	margin: 7px;
+}
+
+.cardContent span {
+	margin-top: 7px;
+	overflow: hidden;
+}
+
+.cardContent span p {
+	width: 18%;
+	float: left;
+	padding: 5px;
+}
+
+.cardContent span button {
+	width: 18%;
+	float: left;
+	padding: 5px;
+}
+
+.cardContent span p span {
+	font-weight: bold;
+}
+
+#timeline {
+	border-radius: 7px;
+	margin: 5px;
+}
+
+#myBar {
+    height: 15px;
+    text-align: center; /* To center it horizontally (if you want) */
+    line-height: 30px; /* To center it vertically */
+    color: white; 
+    border-radius: 7px;
+    margin-left: 20%;
+    width: 30%;
+}
+
+.booked {
+	background-color: #ff7f7f;
+}
+
+.available {
+	background-color: #7aca7a;
+}
