@@ -28,9 +28,10 @@ def book():
     Last_name=request.form['Last Name']
     phn_no=request.form['phone_no']
     email_id=request.form['Email_id']
-    db=pymysql.connect("localhost","Akash","password","airline" )
+    db=pymysql.connect("localhost","root","","Airlines" )
     cursor = db.cursor()
-    cursor.callproc('sp_book',(Flight_id,First_name,Last_name,phn_no,email_id))
+    #cursor.callproc('sp_book',(Flight_id,First_name,Last_name,phn_no,email_id))
+    cursor.execute('INSERT INTO `Airlines`.`Bookings` (Flight_name,First_name,Last_name,Phone_no,Email_id) VALUES (Flight_id,First_name,Last_name,phn_no,email_id)')
     db.commit()
     cursor.execute("SELECT booking_id from `bookings` ORDER BY booking_id DESC")
     booking_id=cursor.fetchone()
@@ -42,7 +43,7 @@ def book():
 
 @app.route("/test" , methods=['GET', 'POST'])
 def test():
-    db=pymysql.connect("localhost","Akash","password","airline" )
+    db=pymysql.connect("localhost","root","","Airlines" )
     cursor = db.cursor()
     Departure=request.form['Departure']
     Arrival=request.form['Arrival']
