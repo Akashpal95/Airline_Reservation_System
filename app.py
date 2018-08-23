@@ -2,7 +2,6 @@ from flask import Flask,render_template,url_for,redirect,request,json,flash,json
 from datetime import datetime
 import time
 import pymysql
-import way2sms
 app=Flask(__name__)
 
 @app.route("/")
