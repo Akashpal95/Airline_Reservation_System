@@ -30,8 +30,11 @@ def book():
     email_id=request.form['Email_id']
     db=pymysql.connect("localhost","root","","Airlines" )
     cursor = db.cursor()
+    print("i am here")
     #cursor.callproc('sp_book',(Flight_id,First_name,Last_name,phn_no,email_id))
-    cursor.execute('INSERT INTO `Airlines`.`Bookings` (Flight_name,First_name,Last_name,Phone_no,Email_id) VALUES (Flight_id,First_name,Last_name,phn_no,email_id)')
+    #cursor.execute('INSERT INTO `Bookings` (Flight_name,First_name,Last_name,Phone_no,Email_id) VALUES ("%s")(Flight_id,First_name,Last_name,phn_no,email_id)')
+    insertstr="INSERT INTO `Bookings` (Flight_name,First_name,Last_name,Phone_no,Email_id) VALUES "+"(\""+Flight_id+"\",\""+First_name+"\",\""+Last_name+"\",\""+phn_no+"\",\""+email_id+"\")"
+    cursor.execute(insertstr)
     db.commit()
     cursor.execute("SELECT booking_id from `bookings` ORDER BY booking_id DESC")
     booking_id=cursor.fetchone()
