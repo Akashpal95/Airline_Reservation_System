@@ -18,6 +18,6 @@ Setting up Database:
 Running The Webpage:     
          
 1.Install Flask    
-2.Download the project to a folder named 'Airline'.   
-3.Go to the respective folder 'Airline' in command prompt.   
-4.Run the app.py file from command prompt : python app.py.   
+2.Download the project.   
+3.Go to the main folder 'Airline_Reservation_System-master' in command prompt.   
+4.Run the app.py file from command prompt : python app.py. (Make sure the path variables for python and flask r set properly)  
